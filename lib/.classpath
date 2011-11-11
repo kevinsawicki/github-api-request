@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/http-request"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/org.eclipse.egit.github.core"/>
+	<classpathentry kind="lib" path="/opt/eclipse-indigo/plugins/org.apache.commons.logging_1.0.4.v201101211617.jar"/>
+	<classpathentry kind="lib" path="/opt/eclipse-indigo/plugins/com.google.gson_1.6.0.v201101131530.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
