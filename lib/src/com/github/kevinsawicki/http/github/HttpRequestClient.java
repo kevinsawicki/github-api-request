@@ -143,7 +143,7 @@ public class HttpRequestClient extends HttpClient<HttpRequestClient> {
 			throw createException(httpRequest.stream(), code,
 					httpRequest.message());
 		} catch (HttpRequestException e) {
-			throw (IOException) e.getCause();
+			throw e.getCause();
 		}
 	}
 
@@ -155,7 +155,7 @@ public class HttpRequestClient extends HttpClient<HttpRequestClient> {
 					.post(createUri(uri)));
 			return sendJson(request, params, type);
 		} catch (HttpRequestException e) {
-			throw (IOException) e.getCause();
+			throw e.getCause();
 		}
 	}
 
@@ -184,7 +184,7 @@ public class HttpRequestClient extends HttpClient<HttpRequestClient> {
 			if (!isEmpty(code))
 				throw new RequestException(parseError(request.stream()), code);
 		} catch (HttpRequestException e) {
-			throw (IOException) e.getCause();
+			throw e.getCause();
 		}
 	}
 
@@ -203,7 +203,7 @@ public class HttpRequestClient extends HttpClient<HttpRequestClient> {
 			}
 			return post.code();
 		} catch (HttpRequestException e) {
-			throw (IOException) e.getCause();
+			throw e.getCause();
 		}
 	}
 }
