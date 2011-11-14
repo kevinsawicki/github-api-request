@@ -61,7 +61,8 @@ public class HttpRequestClient extends HttpClient<HttpRequestClient> {
 	 * @param port
 	 * @param scheme
 	 */
-	public HttpRequestClient(String hostname, int port, String scheme) {
+	public HttpRequestClient(final String hostname, final int port,
+			final String scheme) {
 		super(hostname, port, scheme);
 	}
 
